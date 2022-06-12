@@ -1,0 +1,28 @@
+version: '3'
+services:
+  # nginx:
+  #   restart: always
+  #   build: ./dockerfiles/nginx
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - "./blog:/var/www/blog"
+  #     - "./ssl/certs:/var/www/ssl/certs"
+  #     - "./nginx/conf.d:/etc/nginx/conf.d"
+  #   # command: /bin/bash /start.sh
+  #   env_file:
+  #     - docker.env
+  #   extra_hosts:
+  #     - "raw.githubusercontent.com:199.232.96.133"
+  #   container_name: "nginx"
+  nodejs:
+    restart: always
+    build: ./dockerfiles/nodejs
+    ports:
+      - "4000:4000"
+    volumes:
+      - ".:/var/www/blog"
+    env_file:
+      - docker.env
+    container_name: "nodejs"

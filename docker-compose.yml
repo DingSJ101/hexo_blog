@@ -22,7 +22,7 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - ".:/var/www/blog"
+      - "~/workspace/hexo_blog:/var/www/blog"
     env_file:
       - docker.env
     container_name: "nodejs"

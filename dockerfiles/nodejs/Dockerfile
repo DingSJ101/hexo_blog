@@ -1,11 +1,17 @@
 FROM node:12-alpine
 
+WORKDIR /var/www/blog
+
 RUN echo "Asia/Shanghai" > /etc/timezone \
     && echo "https://mirrors.ustc.edu.cn/alpine/v3.9/main/" > /etc/apk/repositories  \
     && npm config set registry https://registry.npm.taobao.org \
     && apk add --no-cache git bash \
     && npm install hexo-cli -g \
-    && npm install webhook-cli -g 
+    && npm install webhook-cli -g \
+    && git config --local user.name "DingSJ101" \
+    && git config --local user.emal "1018966798@qq.com" \
+    && git init \
+    && git remote add origin git@github.com:DingSJ101/hexo_blog.git
 
 ADD *.sh /
 RUN chmod 777 /*.sh

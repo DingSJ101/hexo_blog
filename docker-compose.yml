@@ -23,6 +23,7 @@ services:
       - "4000:4000"
     volumes:
       - "~/workspace/hexo_blog:/var/www/blog"
+      - "/etc/localtime:/etc/localtime"
     env_file:
       - docker.env
     container_name: "nodejs"

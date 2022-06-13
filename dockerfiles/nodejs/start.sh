@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /var/www/blog
+cd /var/www/blog/blog
 
 # 更新代码
 # git pull && git submodule foreach git pull origin master

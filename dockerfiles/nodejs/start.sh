@@ -3,8 +3,8 @@
 cd /var/www/blog/blog
 
 # 更新代码
-# git pull && git submodule foreach git pull origin master
-git pull origin master
+git pull origin master && git submodule foreach git pull origin master
+# git pull origin master
 
 
 # 生成静态资源

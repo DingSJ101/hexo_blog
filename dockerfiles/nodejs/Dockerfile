@@ -7,16 +7,18 @@ RUN echo "Asia/Shanghai" > /etc/timezone \
     && npm config set registry https://registry.npm.taobao.org \
     && apk add --no-cache git bash \
     && npm install hexo-cli -g \
-    && npm install webhook-cli -g \
-    && git config --local user.name "DingSJ101" \
-    && git config --local user.emal "1018966798@qq.com" \
-    && git init \
-    && git remote add origin git@github.com:DingSJ101/hexo_blog.git
+    && npm install webhook-cli -g 
 
 ADD *.sh /
 RUN chmod 777 /*.sh
 
 EXPOSE 4000
+RUN git init \
+    && rm -r .git \
+    && git init \
+    && git config --replace-all --local user.name "DingSJ101" \
+    && git config --replace-all  --local user.email "1018966798@qq.com" \
+    && git remote add origin https://hub.fastgit.xyz/DingSJ101/hexo_blog.git
 
 ENTRYPOINT ["sh", "/start.sh"]
 

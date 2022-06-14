@@ -2,6 +2,9 @@
 
 cd /var/www/blog
 
+## 更新分支
+git fetch --all
+git reset --hard origin/master
 # 更新代码
 git pull origin master && git submodule foreach git pull origin master
 # git pull origin master

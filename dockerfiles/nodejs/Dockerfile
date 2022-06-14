@@ -12,15 +12,20 @@ RUN echo "Asia/Shanghai" > /etc/timezone \
 ADD *.sh /
 RUN chmod 777 /*.sh
 
-EXPOSE 4000
-RUN git init \
-    && rm -r .git \
-    && git init \
-    && git config --replace-all --local user.name "DingSJ101" \
-    && git config --replace-all  --local user.email "1018966798@qq.com" \
-    && git remote add origin https://hub.fastgit.xyz/DingSJ101/hexo_blog.git
-
 ENTRYPOINT ["sh", "/start.sh"]
+
+EXPOSE 4000
+# RUN git init \
+#     && rm -r .git \
+#     && git init \
+#     && git config --replace-all --local user.name "DingSJ101" \
+#     && git config --replace-all  --local user.email "1018966798@qq.com" \
+#     && git remote add origin https://github.com/DingSJ101/hexo_blog.git\
+#     && git fetch --all\
+#     && git reset --hard origin/master \
+#     && git pull origin master
+
+
 
 
     # && npm install hexo-deployer-git --save \

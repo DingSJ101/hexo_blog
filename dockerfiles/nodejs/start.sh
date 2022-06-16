@@ -17,5 +17,7 @@ hexo clean
 hexo g
 # hexo d
 
+cd ..
+
 # webhook自动部署
 webhook-cli --port 4000 --hooks hooks.json --verbose

@@ -1,6 +1,0 @@
-[submodule "blog/themes/hexo-theme-yilia"]
-	path = blog/themes/hexo-theme-yilia
-	url = https://hub.fastgit.xyz/litten/hexo-theme-yilia.git
-[submodule "blog/themes/hexo-theme-yilia-plus"]
-	path = blog/themes/hexo-theme-yilia-plus
-	url = https://hub.0z.gs/JoeyBling/hexo-theme-yilia-plus.git

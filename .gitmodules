@@ -1,0 +1,3 @@
+[submodule "blog/themes/yilia-plus"]
+	path = blog/themes/yilia-plus
+	url = https://gitee.com/dsj_ws/yilia-plus.git

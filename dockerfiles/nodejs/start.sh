@@ -2,6 +2,10 @@
 
 cd /var/www/blog
 
+
+git config --replace-all --global user.name "DingSJ101" 
+git config --replace-all  --global user.email "1018966798@qq.com"
+
 ## 更新分支
 git fetch --all
 git reset --hard origin/master

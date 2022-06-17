@@ -13,7 +13,7 @@ sudo rm -r hexo_blog
 # git submodule update --init --recursive
 git clone https://gitee.com/dsj_ws/hexo_blog.git hexo_blog
 cd hexo_blog
-git submodule add https://gitee.com/dsj_ws/yilia-plus.git ./blog/themes/yilia-plus
+# git submodule add https://gitee.com/dsj_ws/yilia-plus.git ./blog/themes/yilia-plus
 
 
 echo "### Stoping containers ..."

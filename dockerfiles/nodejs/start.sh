@@ -7,6 +7,7 @@ git fetch --all
 git reset --hard origin/master
 # 更新代码
 git pull origin master 
+git submodule add https://gitee.com/dsj_ws/yilia-plus.git ./blog/themes/yilia-plus
 git submodule update --init --recursive
 git submodule foreach git pull origin master
 

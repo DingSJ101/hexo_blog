@@ -7,7 +7,8 @@ RUN echo "Asia/Shanghai" > /etc/timezone \
     && npm config set registry https://registry.npm.taobao.org \
     && apk add --no-cache git bash \
     && npm install hexo-cli -g \
-    && npm install webhook-cli -g 
+    && npm install webhook-cli -g \
+    && npm install hexo-deployer-git --save 
 
 ADD *.sh /
 RUN chmod 777 /*.sh
@@ -20,13 +21,7 @@ EXPOSE 4000
 #     && git init \
 #     && git config --replace-all --local user.name "DingSJ101" \
 #     && git config --replace-all  --local user.email "1018966798@qq.com" \
-#     && git remote add origin https://github.com/DingSJ101/hexo_blog.git\
-#     && git fetch --all\
-#     && git reset --hard origin/master \
-#     && git pull origin master
-
-
-
+#     && git remote add origin https://github.com/DingSJ101/hexo_blog.git
 
     # && npm install hexo-deployer-git --save \
     # && npm install hexo-generator-json-content@2.2.0 --save \

@@ -19,6 +19,7 @@ cd blog
 
 # 生成静态资源
 npm i hexo-generator-json-content --save
+npm install hexo-deployer-git --save
 npm install --force
 hexo clean
 hexo g

@@ -7,8 +7,7 @@ RUN echo "Asia/Shanghai" > /etc/timezone \
     && npm config set registry https://registry.npm.taobao.org \
     && apk add --no-cache git bash openssh \
     && npm install hexo-cli -g \
-    && npm install webhook-cli -g \
-    && npm install hexo-deployer-git --save 
+    && npm install webhook-cli -g 
 
 ADD *.sh /
 RUN chmod 777 /*.sh

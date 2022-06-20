@@ -11,7 +11,8 @@ sudo rm -r hexo_blog
 # git remote add origin https://gitee.com/dsj_ws/hexo_blog.git
 # git pull origin master
 # git submodule update --init --recursive
-git clone https://gitee.com/dsj_ws/hexo_blog.git hexo_blog
+# git clone https://gitee.com/dsj_ws/hexo_blog.git hexo_blog
+git clone git@gitee.com:starry101/hexo_blog.git
 cd hexo_blog
 # git submodule add https://gitee.com/dsj_ws/yilia-plus.git ./blog/themes/yilia-plus
 

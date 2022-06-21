@@ -123,5 +123,5 @@ jsonContent:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@gitee.com:dsj_ws/homepage.git
+  repo: git@gitee.com:starry101/homepage.git
   branch: master

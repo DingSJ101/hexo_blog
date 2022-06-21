@@ -24,7 +24,5 @@ services:
     volumes:
       - "~/workspace/hexo_blog:/var/www/blog"
       - "/etc/localtime:/etc/localtime"
-      - "~/.ssh/id_rsa_gitee:/root/.ssh/id_rsa"
-    env_file:
-      - docker.env
+      - "~/.ssh/id_rsa:/root/.ssh/id_rsa"
     container_name: "nodejs"

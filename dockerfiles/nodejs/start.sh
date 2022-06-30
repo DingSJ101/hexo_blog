@@ -25,10 +25,11 @@ npm i hexo-generator-json-content --save
 npm install hexo-deployer-git --save
 npm install --force
 hexo clean
-hexo g -d 
+hexo g 
 # hexo d
+hexo server -p 4000
 
-cd ..
 
 # webhook自动部署
-webhook-cli --port 4000 --hooks hooks.json --verbose
+# cd ..
+# webhook-cli --port 4000 --hooks hooks.json --verbose

@@ -1,6 +1,6 @@
 blog/public/
-blog/.deplay_git/
-blog/.deplay_git/*
+blog/.deplay_git
+! blog/themes/landscape/
 blog/themes/
-!blog/themes/landscape
 blog/db.json
+.gitmodules

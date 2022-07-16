@@ -12,7 +12,8 @@ git reset --hard origin/master
 # 更新代码
 git pull origin master 
 # git submodule add https://gitee.com/starry101/yilia-plus.git ./blog/themes/yilia-plus
-git submodule add git@gitee.com:starry101/yilia-plus.git ./blog/themes/yilia-plus
+# git submodule add git@gitee.com:starry101/yilia-plus.git ./blog/themes/yilia-plus
+git submodule add https://github.com/iissnan/hexo-theme-next  ./blog/themes/next
 
 git submodule update --init --recursive
 git submodule foreach git pull origin master

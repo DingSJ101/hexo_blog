@@ -205,7 +205,7 @@ footer:
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: true 
-    icp: 
+    icp: ""
     # The digit in the num of gongan beian.
     gongan_id: 2022002687
     # The full num of gongan beian.
@@ -360,8 +360,8 @@ comments:
 # Disqus
 # For more information: https://disqus.com
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: starry101
   count: true
 
 # DisqusJS
@@ -386,7 +386,7 @@ changyan:
 # Gitalk
 # For more information: https://gitalk.github.io
 gitalk:
-  enable: false
+  enable: true 
   github_id: DingSJ101
   repo: blog_gitalk
   client_id: effb1ec71395ffd4cfb4
@@ -394,11 +394,11 @@ gitalk:
   admin_user: DingSJ101
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
-  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
+  proxy: https://github.com/login/oauth/access_token # This is official proxy address
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-CN
 
 # ---------------------------------------------------------------
 # Statistics and Analytics

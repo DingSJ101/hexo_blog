@@ -107,6 +107,12 @@ deploy:
   repo: git@gitee.com:starry101/homepage.git
   branch: master
 
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+  tag: true
+  category: false
 
 
 ## config from theme nexT 

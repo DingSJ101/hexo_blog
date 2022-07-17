@@ -21,6 +21,9 @@ git submodule foreach git pull origin master
 cd blog
 
 # 生成静态资源
+npm i -D md5 moment request xml-parser
+
+npm i -S hexo-generator-sitemap
 
 npm i hexo-generator-json-content --save
 npm install hexo-generator-searchdb --save

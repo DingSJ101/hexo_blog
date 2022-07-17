@@ -31,6 +31,7 @@ npm install hexo-deployer-git --save
 npm install --force
 hexo clean
 hexo g 
+npm run talk
 # hexo d
 hexo server -p 4000
 

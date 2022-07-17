@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "talk": "node talk-auto-init.js" // npm run talk 
+    "talk": "node talk-auto-init.js" 
   },
   "hexo": {
     "version": "5.4.2"

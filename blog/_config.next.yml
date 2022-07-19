@@ -30,16 +30,11 @@ custom_file_path:
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
-
 # Schemes
 # scheme: Muse
 # scheme: Mist
 scheme: Pisces
 # scheme: Gemini
-
-# Dark Mode
-darkmode: false
-
 
 # ---------------------------------------------------------------
 # Site Information Settings
@@ -47,10 +42,10 @@ darkmode: false
 
 favicon:
   small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  medium: favicon.ico
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
-  #android_manifest: /manifest.json
+  android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.jpg
@@ -79,12 +74,12 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  about: /about/ || fa fa-user
+  # about: /about/ || fa fa-user
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
+  archives: /archives/ || fa fa-archive
+  # schedule: /schedule/ || fa fa-calendar
+  # sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
@@ -113,7 +108,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
 
   # Sidebar padding in pixels.
   padding: 18
@@ -138,8 +133,9 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/DingSJ101 || fab fa-github
+  Gitee : https://gitee.com/starry101 || fab fa-github
+  E-Mail: mailto:dingshijie2019@163.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -157,12 +153,12 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: fa fa-globe
-  title: Links
+  title: 友链
   # Available values: block | inline
   layout: block
 
 links:
-  Title: https://example.com
+  "前排出售友链": https://example.com
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
@@ -194,10 +190,8 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#000000"
 
-  # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
 
   # Powered by Hexo & NexT
   powered: false 
@@ -219,42 +213,18 @@ footer:
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-# Post meta display settings
+# Post meta display settings 首页文章属性
 post_meta:
-  item_text: true
+  # 设为true 可以一行显示，文章的所有属性
+  item_text: true 
   created_at: true
   updated_at:
-    enable: true
+    enable: false
     another_day: true
   categories: true
 
-## TODO
-# ---------------------------------------------------------------
-# Custom Page Settings
-# See: https://theme-next.js.org/docs/theme-settings/custom-pages
-# ---------------------------------------------------------------
-
-# TagCloud settings for tags page.
-tagcloud:
-  min: 12 # Minimum font size in px
-  max: 30 # Maximum font size in px
-  amount: 200 # Total amount of tags
-  orderby: name # Order of tags
-  order: 1 # Sort order
-
-# Google Calendar
-# Share your recent schedule to others via calendar page.
-calendar:
-  calendar_id: <required> # Your Google account E-Mail
-  api_key: <required>
-  orderBy: startTime
-  showLocation: false
-  offsetMax: 72 # Time Range
-  offsetMin: 4 # Time Range
-  showDeleted: false
-  singleEvents: true
-  maxResults: 250
-
+# Use icon instead of the symbol # to indicate the tag at the bottom of the post
+tag_icon: true
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
@@ -265,16 +235,22 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: default
-    dark: stackoverflow-dark
+    # light: default
+    # dark: stackoverflow-dark
+    light: atom-one-dark
+    dark: atom-one-dark
+    # light: devibeans
+    # dark: devibeans
+    # light: vs2015
+    # dark: vs2015
   prism:
     light: prism
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
-    style:
+    style: 
 
 back2top:
   enable: true
@@ -356,25 +332,6 @@ comments:
     #  order: -1
     #gitalk:
     #  order: -2
-
-# Disqus
-# For more information: https://disqus.com
-disqus:
-  enable: true
-  shortname: starry101
-  count: true
-
-# DisqusJS
-# For more information: https://disqusjs.skk.moe
-disqusjs:
-  enable: false
-  # API Endpoint of Disqus API (https://disqus.com/api/docs/).
-  # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
-  # For example:
-  # api: https://disqus.skk.moe/disqus/
-  api:
-  apikey: # Register new application from https://disqus.com/api/applications/
-  shortname: # See: https://disqus.com/admin/settings/general/
 
 # Changyan
 # For more information: https://changyan.kuaizhan.com

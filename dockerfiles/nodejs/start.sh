@@ -20,22 +20,27 @@ git submodule foreach git pull origin master
 
 cd blog
 
-# 生成静态资源
-npm i -D md5 moment request xml-parser
-
-npm i -S hexo-generator-sitemap
-
-npm i hexo-generator-json-content --save
+## 插件
+npm install -D md5 moment request xml-parser
+npm install -S hexo-generator-sitemap
+npm install hexo-generator-json-content --save
+npm install hexo-abbrlink --save  
 npm install hexo-generator-searchdb --save
 npm install hexo-deployer-git --save
 npm install --force
+
+## 生成静态资源
 hexo clean
+## hexo-abbrlink 中的 auto category 插件的 title 填充问题（先生成abbrlink，再填充title）
+## meta中不包含title的文章生成的abbrlink为0
 hexo g 
-npm run talk
+hexo g
+hexo g 
+npm run talk  # 初始化gitalk评论
 # hexo d
-hexo server -p 4000
+# hexo server -p 4000
 
 
-# webhook自动部署
-# cd ..
-# webhook-cli --port 4000 --hooks hooks.json --verbose
+webhook自动部署
+cd ..
+webhook-cli --port 4000 --hooks hooks.json --verbose

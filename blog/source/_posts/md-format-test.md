@@ -1,7 +1,9 @@
 ---
-title:  "md-format-test "
-date:  2019-06-01 
-tags: markdown 
+title: 'md-format-test '
+tags: markdown
+abbrlink: ca67ce09
+categories: uncategorized
+date: 2019-06-01 00:00:00
 ---
 这是一个markdown目录和样式测试文件
 <!--more-->

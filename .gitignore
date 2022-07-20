@@ -1,7 +1,6 @@
 blog/public/
 blog/.deplay_git/
-blog/themes/yilia-plus/
-blog/themes/book/
+blog/themes/
 
 blog/db.json
 .gitmodules

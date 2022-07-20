@@ -8,7 +8,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - "~/workspace/hexo_blog/blog/public:/var/www/blog"
+      - "~/workspace/hexo_blog/blog:/var/www/blog"
       - "/etc/nginx:/etc/nginx"
       - "./nginx/hexo.conf:/etc/nginx/conf.d/hexo.conf"
     container_name: "hexo_nginx"

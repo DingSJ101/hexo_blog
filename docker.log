@@ -51695,3 +51695,6 @@ Attaching to hexo_nodejs, hexo_nginx
 [33mhexo_nodejs |[0m [webhook] 2022/07/20 23:09:16 found 1 hook(s) in file
 [33mhexo_nodejs |[0m [webhook] 2022/07/20 23:09:16 	loaded: webhook-deploy-hexo
 [33mhexo_nodejs |[0m [webhook] 2022/07/20 23:09:16 serving hooks on http://0.0.0.0:4000/hooks/:id
+[33mhexo_nodejs exited with code 137
+[0m[36mhexo_nginx exited with code 137
+[0m

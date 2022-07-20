@@ -3,6 +3,7 @@
 # start project with one file 
 cd ~/workspace
 sudo rm -r hexo_blog
+su dsj
 # mkdir hexo_blog 
 # cd hexo_blog 
 # git init 
@@ -21,7 +22,7 @@ echo "### Stoping containers ..."
 docker-compose down
 
 echo "### Starting v ..."
-docker-compose -f docker-compose.yml  up --force-recreate --build   > docker.log
+docker-compose -f docker-compose.yml  up --force-recreate --build   
 
 
  

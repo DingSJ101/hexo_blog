@@ -9,9 +9,7 @@ services:
       - "443:443"
     volumes:
       - "~/workspace/hexo_blog/blog/public:/var/www/blog"
-      - "./ssl/certs:/var/www/ssl/certs"
       - "/etc/nginx:/etc/nginx"
-      - "./nginx/conf.d:/etc/nginx/conf.d"
       - "./nginx/hexo.conf:/etc/nginx/conf.d/hexo.conf"
     container_name: "hexo_nginx"
 

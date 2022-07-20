@@ -14,7 +14,7 @@ cd ~/workspace
 # git clone https://gitee.com/dsj_ws/hexo_blog.git hexo_blog  #部署使用
 # git clone git@gitee.com:starry101/hexo_blog.git  
 # git clone git@github.com:DingSJ101/hexo_blog.git  # 容器开发使用
-# cd hexo_blog
+cd hexo_blog
 
 
 echo "### Stoping containers ..."

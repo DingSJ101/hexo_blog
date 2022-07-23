@@ -14,8 +14,8 @@ git pull origin master
 
 # 导入组件
 git submodule init 
-git submodule add -f  https://github.com/next-theme/hexo-theme-next.git  ./themes/next  # 主题
-git submodule add -f git@gitee.com:starry101/docs.git ./source/_posts   # 文章
+git submodule add -f  https://github.com/next-theme/hexo-theme-next.git  ./blog/themes/next  # 主题
+git submodule add -f git@gitee.com:starry101/docs.git ./blog/source/_posts   # 文章
 git submodule update --init --recursive
 git submodule foreach git pull origin master
 

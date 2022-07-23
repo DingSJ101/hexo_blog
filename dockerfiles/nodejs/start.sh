@@ -16,7 +16,7 @@ git pull origin master
 # git rm -r --cached .
 git submodule init 
 git submodule add -f  https://github.com/next-theme/hexo-theme-next.git  ./blog/themes/next
-git submodule add -f git@gitee.com:starry101/docs.git ./blog/source/_post 
+git submodule add -f git@gitee.com:starry101/docs.git ./blog/source/_posts
 git submodule update --init --recursive
 git submodule foreach git pull origin master
 

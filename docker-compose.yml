@@ -8,10 +8,16 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - "~/workspace/hexo_blog/blog:/var/www/blog"
+      - "./blog:/var/www/blog"
       - "/etc/nginx:/etc/nginx"
       - "./nginx/hexo.conf:/etc/nginx/conf.d/hexo.conf"
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
     container_name: "hexo_nginx"
+    
+    # env_file:
+    #   - docker.env
+    # extra_hosts:
+    #   - "raw.githubusercontent.com:199.232.96.133"
 
   nodejs:
     restart: always
@@ -19,7 +25,7 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - "~/workspace/hexo_blog:/var/www/blog"
+      - ".:/var/www/blog"
       - "/etc/localtime:/etc/localtime"
       - "~/.ssh/id_rsa:/root/.ssh/id_rsa"
     container_name: "hexo_nodejs"

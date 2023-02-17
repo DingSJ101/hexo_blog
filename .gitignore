@@ -5,3 +5,4 @@ blog/source/_posts
 
 blog/db.json
 .gitmodules
+*.log

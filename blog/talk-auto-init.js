@@ -91,9 +91,11 @@ const getIsInitByRequest = (id) => {
   return new Promise((resolve) => {
     request(options, function (err, response, body) {
       if (err) {
+        console.log(`error  ${options['url']} `);
         return resolve([err, false]);
       }
       if (response.statusCode != 200) {
+        console.log(`bad response ${options['url']} `);
         return resolve([response, false]);
       }
       const res = JSON.parse(body);
@@ -239,7 +241,8 @@ const init = async () => {
     }
     const [err, res] = await idIsInit(id);
     if (err) {
-      console.log(`Error: 查询评论异常 [ ${title} ] , 信息：`, err || '无');
+      // console.log(`Error: 查询评论异常 [ ${title} ] , 信息：`, err || '无');
+      console.log(`Error: 查询评论异常 [ ${title} ] `);
       errorData.push({
         ...item,
         info: '查询评论异常',

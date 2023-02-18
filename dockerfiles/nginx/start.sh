@@ -1,6 +1,4 @@
 #!/bin/bash
-touch /var/log/nginx/error.log
-touch 
 # 前台启动
 nginx -g "daemon off;"
 
